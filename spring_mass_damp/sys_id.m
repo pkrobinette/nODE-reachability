@@ -1,27 +1,5 @@
-% par = [3; 50; 2];
-% aux = {};
-% T = 0;
-% m = idgrey('spring_sys', par, 'c');
-% 
-% load('training_data/spring_training1')
-% 
-% m_est = greyest(data.x, m);
-
-% FileName = 'spring';
-% Order = [1 2 1];
-% Parameters = [3; 50; 2];
-% InitialStates = [
-% % Ts = 0;
-
-%  something with iddata for time-domain estimation
-
-
-
-% Make ts a variable and save it for later.
-
-% data = iddata(out.x, out.F, 0.005z0;
-%  init_sys = idgrey(odefunction, parameters, type = 'c', optional_args,
-%  Ts)
+% System Identificaiton of the spring mass damper model
+% TO DO: add PWM for force and add noise
 
 %% Clear
 clear;

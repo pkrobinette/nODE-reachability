@@ -1,4 +1,4 @@
-% Generate data for the state space model.
+% Generate data for the state space model
 % ma = F - bv - kx
 % m: mass (kg)
 % k: spring constant (N/m)
@@ -12,7 +12,7 @@
 % C = [1 0];
 % D = [0];
 
-clear;
+clear
 
 m = 10;
 k = 400;
@@ -23,6 +23,5 @@ Ts = 0;
 
 out = sim('spring_mass_damp');
 
-% indicate path of datafile.
 save('training_data/spring_training5')
 
