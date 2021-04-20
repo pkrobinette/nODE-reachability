@@ -1,8 +1,9 @@
 # Spring Mass Damper System
 
 ### Files
-- `generate_data`: generates data based on the spring mass damper system in `spring_mass_damp`
-- `load_data`: load and evaluate a designated training file
-- `spring_mass_damp.slx`: simulink model of the system
-- `spring_mass_func`: a function for the dynamics of the system that is used in sysID
+- `spring_mass_damp.slx`: simulink model of the system that uses integrals
+- `spring_mass_damp_tf.slx`: simulink model of the system that uses a transfer function
+- `spring_nn_sys_id`: system identification of the system using neural networks
+- `spring_node_sys_id`: system identification of the system using neural odes
+- `spring_og_sys_id`: system identification of the system using classic techniques. Traces generated from either `spring_mass_damp` or `spring_mass_damp_tf`.
 - `spring_sys_id`: system identification for the model. Not working at present. TO DO:
