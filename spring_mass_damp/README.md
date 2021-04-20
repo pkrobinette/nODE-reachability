@@ -11,4 +11,4 @@
 TO DO: 
 - verification of og.
 - build nn and node
-- verificatin of nn and node
+- verification of nn and node
