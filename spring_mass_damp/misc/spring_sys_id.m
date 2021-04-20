@@ -22,7 +22,7 @@ data = iddata([zeros(5, 1); out.x], [zeros(5,1); out.F]); % zeros(5,1) is to app
 %% idgrey variables
 odefunc = 'spring_mass_func';
 m = 5;
-k = 300;
+k = 400;
 b = 10;
 
 parameters = {m k b};  % parameters in the spring mass damper model
