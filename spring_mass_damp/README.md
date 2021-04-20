@@ -6,4 +6,9 @@
 - `spring_nn_sys_id`: system identification of the system using neural networks
 - `spring_node_sys_id`: system identification of the system using neural odes
 - `spring_og_sys_id`: system identification of the system using classic techniques. Traces generated from either `spring_mass_damp` or `spring_mass_damp_tf`.
-- `spring_sys_id`: system identification for the model. Not working at present. TO DO:
+
+
+TO DO: 
+- verification of og.
+- build nn and node
+- verificatin of nn and node
