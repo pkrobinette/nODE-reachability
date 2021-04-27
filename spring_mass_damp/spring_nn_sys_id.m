@@ -3,3 +3,5 @@
 clear; clc;
 load('spring_tf.mat');
 
+plot(data.t, data.y);
+
