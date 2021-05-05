@@ -158,8 +158,7 @@ plot(act_t, lb, 'r');
 hold on
 plot(pred_t, pred_y, '-b');
 
-%% Attempts at Reachabilty
-% CORA ---*------*------*------
+%% Reachabilty -- CORA
 
 % System Dynamics ---------------------------------------------------------
 
@@ -172,16 +171,10 @@ obj1 = linearSys(A, B, [], C, D);
 obj2 = linearSys(A1, B1, [], C1, D1);
 
 % Parameters ---------------------------------------------------------------
-projDims = length(A);
-inputDim = length(B(1,:));
 
 % final time, initial set, and uncertain inputs
-% params.tFinal = 10;
-% params.R0 = zonotope([zeros(projDims,1),0.1*eye(projDims,4)]);
-% params.U = zonotope([zeros(inputDim,1),[0.05 1]]);
-
 params.tFinal = 20;
-params.R0 = zonotope(interval([2;2], [2.5;2.5]));
+params.R0 = zonotope(interval([2;2], [2.5;2.5])); %% TO DO: Maybe play around with just [2;2.5]
 params.U = zonotope(interval(0, 0.5));
 % params.U = zonotope([1;-0.5],[0.2,0.5]);
 
@@ -248,7 +241,50 @@ ylabel('Amplitude');
 grid on;
 saveas(gcf, 'Sim_Reach_cora.png');
 
-%% 
+%% Reachability -- NNV
+
+sys = LinearODE(sys_ss.A, sys_ss.B, sys_ss.C, sys_ss.D);
+sys2 = LinearODE(A1, B1, C1, D1);
+
+% simulation params
+h = 0.25; 
+N = 20;
+t = [0:h:N]; % Array of time samples, .25 increment up to N
+u = zeros(1, length(t)); % input array
+x0 = [2;2.5]; % first element is starting amp, the second is starting u
+[y, t, x] = simulate(sys, u, t, x0);
+[y2, t2, x2] = simulate(sys2, u, t, x0);
+
+close all;
+figure(1)
+plot(t, y, 'r');
+hold on;
+plot(t2, y2, '--b');
+title('Simulation of Actual and Predicted Using NNV');
+ylabel('Amplitude');
+xlabel('Time');
+grid on;
+legend('Actual', 'Predicted');
+saveas(gcf, 'sim_nnv.png');
 
 
+%% LINEAR ODE simREACH
+method = 'direct';
+h = 0.1; % time-step
+N = 400; % number of steps
+U = []; % control input set
+R0 = Star([0; 2],[0.5; 2.25]);% initial set of states
+R = simReach(sys, method, R0, U, h, N);
+R2 = simReach(sys2, method, R0, U, h, N);
 
+%% PLOT
+close all;
+Star.plots(R);
+hold on;
+Star.plots(R2, 'r');
+title('Reachability of Actual and Predicted Using NNV');
+xlabel('x1')
+ylabel('x2');
+grid on;
+legend('Actual', 'Predicted');
+saveas(gcf, 'Sim_Reach_nnv.png');
