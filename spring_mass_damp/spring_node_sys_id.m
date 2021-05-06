@@ -1,1 +1,0 @@
-%% System Identfication for the spring mass damper system using neural odes
