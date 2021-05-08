@@ -5,7 +5,7 @@ The SMDS consists of a mass attached to a wall by both a spring and a damper. Th
 
 ![sys diagram](./images/Mass-Spring-Damper.png | width=100)
 
-<img src="./images/Mass-Spring-Damper.png" alt="sys diagram" width="300" height="250">
+<img src="./images/Mass-Spring-Damper.png" alt="sys diagram" width="300" height="200">
 
 
 
