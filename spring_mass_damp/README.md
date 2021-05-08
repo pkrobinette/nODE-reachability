@@ -12,16 +12,7 @@ The SMDS consists of a mass attached to a wall by both a spring and a damper. Th
 > `F` : Force acting on block
 > `x` : displacement of block
 
-The equations of motion for the system are derived as follows:
-\begin{equation}
-    \sum F = ma
-\end{equation}
-\begin{equation}
-    F - bv - kx = ma
-\end{equation}
-\begin{equation}\label{eq:dyna}
-    F(t) = m\frac{d^2x}{dt^2} + b\frac{dx}{dt} + kx(t)
-\end{equation}
+[img]http://www.sciweavers.org/tex2img.php?eq=%0A%5Cbegin%7Bequation%7D%0A%20%20%20%20%5Csum%20F%20%3D%20ma%0A%5Cend%7Bequation%7D%0A%5Cbegin%7Bequation%7D%0A%20%20%20%20F%20-%20bv%20-%20kx%20%3D%20ma%0A%5Cend%7Bequation%7D%0A%5Cbegin%7Bequation%7D%5Clabel%7Beq%3Adyna%7D%0A%20%20%20%20F%28t%29%20%3D%20m%5Cfrac%7Bd%5E2x%7D%7Bdt%5E2%7D%20%2B%20b%5Cfrac%7Bdx%7D%7Bdt%7D%20%2B%20kx%28t%29%0A%5Cend%7Bequation%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0[/img]
 
 ## Files
 - `images`: plots generated from sys id and reachability
