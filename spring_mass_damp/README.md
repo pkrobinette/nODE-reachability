@@ -12,6 +12,17 @@ The SMDS consists of a mass attached to a wall by both a spring and a damper. Th
 > `F` : Force acting on block
 > `x` : displacement of block
 
+The equations of motion for the system are derived as follows:
+\begin{equation}
+    \sum F = ma
+\end{equation}
+\begin{equation}
+    F - bv - kx = ma
+\end{equation}
+\begin{equation}\label{eq:dyna}
+    F(t) = m\frac{d^2x}{dt^2} + b\frac{dx}{dt} + kx(t)
+\end{equation}
+
 ## Files
 - `images`: plots generated from sys id and reachability
 - `spring-net.mat`: trained neural network for spring mass damper system
