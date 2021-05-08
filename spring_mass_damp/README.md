@@ -2,6 +2,7 @@
 
 ## Dynamics
 The SMDS consists of a mass attached to a wall by both a spring and a damper. The forces of motion are in the horizontal ($+x$, $-x$) direction, eliminating the effects of gravity on the equations. The figure below shows this system as well as the constants associated with both the spring and the damper.
+
 <p align="center">
 <img src="./images/Mass-Spring-Damper.png" alt="sys diagram" width="300" height="200">
 <p>
@@ -44,7 +45,7 @@ Using the state space model, traces of the system are generated with:
 To make the system resemble real-world data, noise is also injected into the output before measurement. After generating the traces with varying levels of noise, the parameters of each are calculated using Matlab's built in **ssest** function. This system identification function estimates a state space model based on the recorded input and output traces. The predicted state space model can then be compared to the actual model on new data. The predicted model for 15% added noise is shown below.
 
 <p align="center">
-<img src="./images/resp-15_noise.png" alt="response" width="300" height="200">
+<img src="./images/resp-15_noise.png" alt="response" width="500" height="500">
 <p>
 
 ### CORA Reachability
