@@ -43,7 +43,9 @@ Using the state space model, traces of the system are generated with:
 
 To make the system resemble real-world data, noise is also injected into the output before measurement. After generating the traces with varying levels of noise, the parameters of each are calculated using Matlab's built in **ssest** function. This system identification function estimates a state space model based on the recorded input and output traces. The predicted state space model can then be compared to the actual model on new data. The predicted model for 15% added noise is shown below.
 
-![response](./images/resp-15_noise.png)
+<p align="center">
+<img src="./images/resp-15_noise.png" alt="response" width="300" height="200">
+<p>
 
 ### CORA Reachability
 Reachability calculation using CORA is shown below.
