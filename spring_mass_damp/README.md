@@ -7,9 +7,13 @@ The SMDS consists of a mass attached to a wall by both a spring and a damper. Th
 <p>
 
 > `k` : spring constant
+> 
 > `m` : mass of block
+> 
 > `b` : damping coefficient
+> 
 > `F` : Force acting on block
+> 
 > `x` : displacement of block
 
 <p align="center">
