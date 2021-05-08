@@ -6,6 +6,13 @@ The SMDS consists of a mass attached to a wall by both a spring and a damper. Th
 <img src="./images/Mass-Spring-Damper.png" alt="sys diagram" width="300" height="200">
 <p>
 
+<p align="center">
+> `k` : spring constant
+> `m` : mass of block
+> `b` : damping coefficient
+> `F` : Force acting on block
+> `x` : displacement of block
+<p>
 
 ## Files
 - `images`: plots generated from sys id and reachability
