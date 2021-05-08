@@ -1,6 +1,6 @@
 # nODE-reachability
 
-## [buck-conv]
+## [buck-conv](buck-conv)
 Incomplete -- buck converter system
 
 ## [spring-mass-damp](https://github.com/pkrobinette/nODE-reachability/tree/main/spring_mass_damp)
