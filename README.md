@@ -4,4 +4,4 @@
 Incomplete -- buck converter system
 
 ## [spring-mass-damp](https://github.com/pkrobinette/nODE-reachability/tree/main/spring_mass_damp)
-System Identification and reachability of the spring mass damper system.
+System Identification and reachability for the spring mass damper system.
