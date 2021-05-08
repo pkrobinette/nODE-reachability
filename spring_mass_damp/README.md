@@ -1,12 +1,10 @@
 # Spring Mass Damper System
 
 ## Dynamics
-The SMDS consists of a mass attached to a wall by both a spring and a damper. The forces of motion are in the horizontal ($+x$, $-x$) direction, eliminating the effects of gravity on the equations. In [sys diagram] The figure below shows this system as well as the constants associated with both the spring and the damper.
-
-![sys diagram](./images/Mass-Spring-Damper.png | width=100)
-
+The SMDS consists of a mass attached to a wall by both a spring and a damper. The forces of motion are in the horizontal ($+x$, $-x$) direction, eliminating the effects of gravity on the equations. The figure below shows this system as well as the constants associated with both the spring and the damper.
+<p align="center">
 <img src="./images/Mass-Spring-Damper.png" alt="sys diagram" width="300" height="200">
-
+<p>
 
 
 ## Files
