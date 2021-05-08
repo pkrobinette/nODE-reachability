@@ -1,14 +1,14 @@
 # Spring Mass Damper System
 
-### Files
+## Dynamics
+The SMDS consists of a mass attached to a wall by both a spring and a damper. The forces of motion are in the horizontal ($+x$, $-x$) direction, eliminating the effects of gravity on the equations. The figure below shows this system as well as the constants associated with both the spring and the damper.
+
+
+
+## Files
+- `images`: plots generated from sys id and reachability
+- `spring-net.mat`: trained neural network for spring mass damper system
 - `spring_mass_damp.slx`: simulink model of the system that uses integrals
 - `spring_mass_damp_tf.slx`: simulink model of the system that uses a transfer function
 - `spring_nn_sys_id`: system identification of the system using neural networks
-- `spring_node_sys_id`: system identification of the system using neural odes
-- `spring_og_sys_id`: system identification of the system using classic techniques. Traces generated from either `spring_mass_damp` or `spring_mass_damp_tf`.
-
-
-TO DO: 
-- verification of og.
-- build nn and node
-- verification of nn and node
+- `spring_og_sys_id`: system identification of the system using classic techniques.
