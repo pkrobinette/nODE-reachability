@@ -12,11 +12,11 @@ The spring mass damper system (SMDS) consists of a mass attached to a wall by bo
 - `b` : damping coefficient
 - `F` : Force acting on block
 - `x` : displacement of block
----
+
+### Equations of Motion
 F = ma
 
 F - bv -kx = ma
----
   
 ### State Space Representation
 A = [0 1; -k/m -b/m]
