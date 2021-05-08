@@ -13,7 +13,8 @@ The SMDS consists of a mass attached to a wall by both a spring and a damper. Th
 - `F` : Force acting on block
 - `x` : displacement of block
 
-F = ma \\
+F = ma
+
 F - bv -kx = ma
 
   
@@ -38,7 +39,7 @@ Using the state space model, traces of the system are generated with:
 
 To make the system resemble real-world data, noise is also injected into the output before measurement. After generating the traces with varying levels of noise, the parameters of each are calculated using Matlab's built in **ssest** function. This system identification function estimates a state space model based on the recorded input and output traces. The predicted state space model can then be compared to the actual model on new data. The predicted model for 15% added noise is shown below.
 
-![response](./images/resp-15_noise.png)
+![response](./images/ss_est_15_noise.png)
 
 ### CORA Reachability
 Reachability calculation using CORA is shown below.
