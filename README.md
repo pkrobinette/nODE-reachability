@@ -1,6 +1,7 @@
 # nODE-reachability
 
-## Buck-Converter
+## [buck-conv]
+Incomplete -- buck converter system
 
-## [spring-mass-damper](/spring-mass-damper)
+## [spring-mass-damp](https://github.com/pkrobinette/nODE-reachability/tree/main/spring_mass_damp)
 System Identification and reachability of the spring mass damper system.
